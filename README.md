@@ -20,7 +20,7 @@ dependencies {
     kapt('com.squareup.moshi:moshi-kotlin-codegen:1.12.0')
     kaptTest 'com.squareup.moshi:moshi-kotlin-codegen:1.12.0'
     // moshi拓展工具
-    implementation 'com.github.D10NGYANG:DLMoshiUtil:1.0'
+    implementation 'com.github.D10NGYANG:DLMoshiUtil:1.1'
 }
 ```
 3 混淆

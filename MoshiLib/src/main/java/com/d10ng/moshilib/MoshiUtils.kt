@@ -15,6 +15,14 @@ fun getMoshiBuilder() = Moshi.Builder().build()
 inline fun <reified T> T.toJson() = getMoshiBuilder().adapter(T::class.java).toJson(this)
 
 /**
+ * 将Bean转换成Json
+ * @receiver T
+ * @param clz Class<T>
+ * @return (String..String?)
+ */
+fun <T> T.toJson(clz: Class<T>) = getMoshiBuilder().adapter(clz).toJson(this)
+
+/**
  * 将object转换成实体
  * @receiver Any
  * @param clz Class<T>
